@@ -10,8 +10,8 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/enfonotheme/css/enfonotheme.css"
-# app_include_js = "/assets/enfonotheme/js/enfonotheme.js"
+app_include_css = "/assets/enfonotheme/css/theme.css"
+app_include_js = "/assets/enfonotheme/js/theme.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/enfonotheme/css/enfonotheme.css"
@@ -162,7 +162,9 @@ app_license = "mit"
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "enfonotheme.event.get_events"
 # }
-#
+override_whitelisted_methods = {
+    "frappe.core.doctype.user.user.switch_theme": "enfonotheme.overrides.switch_theme.switch_theme"
+}
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
