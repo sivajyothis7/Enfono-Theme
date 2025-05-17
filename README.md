@@ -1,6 +1,6 @@
 ## Enfono Theme
 
-Custom Frappe Theme
+A modern Custom UI App for Frappe
 
 #### License
 
