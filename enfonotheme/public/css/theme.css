@@ -234,7 +234,7 @@
 }
 
 [data-theme=modern_ui_theme] .widget.number-widget-box {
-    background-color: #ced4da;
+    background-color: aliceblue;
     color: white;
     cursor: pointer;
     min-height: 84px;
